@@ -5,7 +5,15 @@ import { RadioTheme } from "../components/Radio/types";
 import { ToggleTheme } from "../components/Toggle/types";
 import { NavTheme } from "../widgets/Menu/types";
 import { ModalTheme } from "../widgets/Modal/types";
-import { Colors, Breakpoints, MediaQueries, Spacing, Shadows, Radii, ZIndices } from "./types";
+import {
+  Colors,
+  Breakpoints,
+  MediaQueries,
+  Spacing,
+  Shadows,
+  Radii,
+  ZIndices,
+} from "./types";
 
 export interface PancakeTheme {
   siteWidth: number;
@@ -28,6 +36,7 @@ export interface PancakeTheme {
 
 export { default as dark } from "./dark";
 export { default as light } from "./light";
+export { default as greenLight } from "./greenLight";
 
 export { lightColors } from "./colors";
 export { darkColors } from "./colors";

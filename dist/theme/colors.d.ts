@@ -13,3 +13,4 @@ export declare const brandColors: {
 };
 export declare const lightColors: Colors;
 export declare const darkColors: Colors;
+export declare const GreenLightColors: Colors;

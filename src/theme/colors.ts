@@ -55,3 +55,24 @@ export const darkColors: Colors = {
     bubblegum: "linear-gradient(139.73deg, #1f606f 0%, #164865 100%)",
   },
 };
+
+export const GreenLightColors: Colors = {
+  ...baseColors,
+  ...brandColors,
+  primary: "#31c77f",
+  background: "#FAF9FA",
+  backgroundDisabled: "#E9EAEB",
+  contrast: "#191326",
+  invertedContrast: "#FFFFFF",
+  input: "#eeeaf4",
+  inputBorder: "#cccccc",
+  tertiary: "#EFF4F5",
+  text: "#452A7A",
+  textDisabled: "#BDC2C4",
+  textSubtle: "#FF720D",
+  borderColor: "#E9EAEB",
+  card: "#FFFFFF",
+  gradients: {
+    bubblegum: "linear-gradient(139.73deg, #E6FDFF 0%, #F3EFFF 100%)",
+  },
+};

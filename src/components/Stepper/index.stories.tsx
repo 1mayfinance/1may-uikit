@@ -50,9 +50,11 @@ export const Components: React.FC = () => {
             <CardBody>
               <h2>Step 0</h2>
               <div>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae nisl imperdiet, vestibulum lacus at,
-                placerat nisi. Vestibulum quis scelerisque purus. Curabitur non magna tincidunt, fermentum neque sed,
-                finibus neque. Phasellus consequat at lorem a venenatis.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                vitae nisl imperdiet, vestibulum lacus at, placerat nisi.
+                Vestibulum quis scelerisque purus. Curabitur non magna
+                tincidunt, fermentum neque sed, finibus neque. Phasellus
+                consequat at lorem a venenatis.
               </div>
             </CardBody>
           </Card>
@@ -64,9 +66,11 @@ export const Components: React.FC = () => {
             <CardBody>
               <h2>Step 1</h2>
               <div>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae nisl imperdiet, vestibulum lacus at,
-                placerat nisi. Vestibulum quis scelerisque purus. Curabitur non magna tincidunt, fermentum neque sed,
-                finibus neque. Phasellus consequat at lorem a venenatis.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                vitae nisl imperdiet, vestibulum lacus at, placerat nisi.
+                Vestibulum quis scelerisque purus. Curabitur non magna
+                tincidunt, fermentum neque sed, finibus neque. Phasellus
+                consequat at lorem a venenatis.
               </div>
             </CardBody>
           </Card>
@@ -78,9 +82,11 @@ export const Components: React.FC = () => {
             <CardBody>
               <h2>Step 2</h2>
               <div>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae nisl imperdiet, vestibulum lacus at,
-                placerat nisi. Vestibulum quis scelerisque purus. Curabitur non magna tincidunt, fermentum neque sed,
-                finibus neque. Phasellus consequat at lorem a venenatis.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                vitae nisl imperdiet, vestibulum lacus at, placerat nisi.
+                Vestibulum quis scelerisque purus. Curabitur non magna
+                tincidunt, fermentum neque sed, finibus neque. Phasellus
+                consequat at lorem a venenatis.
               </div>
             </CardBody>
           </Card>

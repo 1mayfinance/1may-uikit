@@ -20,9 +20,15 @@ const Dot = styled.span<DotProps>`
   background-color: ${({ theme }) => theme.colors.failure};
 `;
 
-const NotificationDot: React.FC<NotificationDotProps> = ({ show = false, children, ...props }) => (
+const NotificationDot: React.FC<NotificationDotProps> = ({
+  show = false,
+  children,
+  ...props
+}) => (
   <NotificationDotRoot>
-    {Children.map(children, (child: ReactElement) => cloneElement(child, props))}
+    {Children.map(children, (child: ReactElement) =>
+      cloneElement(child, props)
+    )}
     <Dot show={show} />
   </NotificationDotRoot>
 );
