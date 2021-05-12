@@ -81,9 +81,7 @@ const PanelFooter: React.FC<Props> = ({
         {cakePriceUsd ? (
           <PriceLink href={cakePriceLink} target="_blank">
             <PancakeRoundIcon width="24px" mr="8px" />
-            <Text color="text" fontSize="15px" bold>{`$${cakePriceUsd.toFixed(
-              6
-            )}`}</Text>
+            <Text color="text" fontSize="15px" bold>{`$${cakePriceUsd.toFixed(6)}`}</Text>
           </PriceLink>
         ) : (
           <Skeleton width={80} height={24} />
@@ -91,10 +89,7 @@ const PanelFooter: React.FC<Props> = ({
         <Dropdown
           position="top-right"
           target={
-            <Button
-              variant="text"
-              startIcon={<LanguageIcon color="textSubtle" width="24px" />}
-            >
+            <Button variant="text" startIcon={<LanguageIcon color="textSubtle" width="24px" />}>
               <Text color="textSubtle">{currentLang?.toUpperCase()}</Text>
             </Button>
           }
@@ -126,33 +121,17 @@ const PanelFooter: React.FC<Props> = ({
         <Flex>
           {socials.map((social, index) => {
             const Icon = Icons[social.icon];
-            const iconProps = {
-              width: "20px",
-              color: "textSubtle",
-              style: { cursor: "pointer" },
-            };
+            const iconProps = { width: "20px", color: "textSubtle", style: { cursor: "pointer" } };
             const mr = index < socials.length - 1 ? "20px" : 0;
             if (social.items) {
               return (
                 <Dropdown
                   key={social.label}
                   position="top"
-                  target={
-                    <Icon
-                      {...iconProps}
-                      mr={mr}
-                      style={{ display: "flex", alignItems: "center" }}
-                    />
-                  }
+                  target={<Icon {...iconProps} mr={mr} style={{ display: "flex", alignItems: "center" }} />}
                 >
                   {social.items.map((item) => (
-                    <Link
-                      external
-                      key={item.label}
-                      href={item.href}
-                      aria-label={item.label}
-                      color="textSubtle"
-                    >
+                    <Link external key={item.label} href={item.href} aria-label={item.label} color="textSubtle">
                       {item.label}
                     </Link>
                   ))}
@@ -160,13 +139,7 @@ const PanelFooter: React.FC<Props> = ({
               );
             }
             return (
-              <Link
-                external
-                key={social.label}
-                href={social.href}
-                aria-label={social.label}
-                mr={mr}
-              >
+              <Link external key={social.label} href={social.href} aria-label={social.label} mr={mr}>
                 <Icon {...iconProps} />
               </Link>
             );

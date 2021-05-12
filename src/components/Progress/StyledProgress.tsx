@@ -8,10 +8,7 @@ export const Bar = styled.div<BarProps>`
   position: absolute;
   top: 0;
   left: 0;
-  background-color: ${(props) =>
-    props.primary
-      ? props.theme.colors.primary
-      : `${props.theme.colors.primary}80`};
+  background-color: ${(props) => (props.primary ? props.theme.colors.primary : `${props.theme.colors.primary}80`)};
   border-top-left-radius: 32px;
   border-bottom-left-radius: 32px;
   height: 16px;
