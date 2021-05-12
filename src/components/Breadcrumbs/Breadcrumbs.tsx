@@ -34,10 +34,7 @@ const StyledBreadcrumbs = styled.ul`
   ${space}
 `;
 
-const insertSeparators = (
-  items: ReactNode[],
-  separator: BreadcrumbsProps["separator"]
-) =>
+const insertSeparators = (items: ReactNode[], separator: BreadcrumbsProps["separator"]) =>
   items.reduce((accum: ReactNode[], item, index) => {
     if (index === 0) {
       return [...accum, item];
@@ -54,13 +51,8 @@ const insertSeparators = (
 
 const DefaultSeparator = <ChevronRightIcon color="currentColor" width="24px" />;
 
-const Breadcrumbs: React.FC<BreadcrumbsProps> = ({
-  separator = DefaultSeparator,
-  children,
-}) => {
-  const validItems = Children.toArray(children).filter((child) =>
-    isValidElement(child)
-  );
+const Breadcrumbs: React.FC<BreadcrumbsProps> = ({ separator = DefaultSeparator, children }) => {
+  const validItems = Children.toArray(children).filter((child) => isValidElement(child));
   const items = insertSeparators(validItems, separator);
 
   return (

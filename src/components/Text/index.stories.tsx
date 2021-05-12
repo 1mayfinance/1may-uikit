@@ -28,10 +28,7 @@ export default {
     color: {
       name: "color",
       table: {
-        type: {
-          summary: "string",
-          detail: "Color from the theme, or CSS color",
-        },
+        type: { summary: "string", detail: "Color from the theme, or CSS color" },
         defaultValue: { summary: "theme.colors.text" },
       },
       control: {
